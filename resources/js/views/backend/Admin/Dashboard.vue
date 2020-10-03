@@ -1,6 +1,37 @@
 <template>
   <div v-if="!$root.spinner">
     <div class="row">
+      <div class="col-md-3">
+        <div class="card card-body card-style bg-color-9 text-white">
+          <h5>Total Product</h5>
+          <span>2000+</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-body card-style bg-color-7 text-white">
+          <h5>Total Registerd User</h5>
+          <span>567</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-body card-style bg-color-4 text-white">
+          <h5>Total Order</h5>
+          <span>567+</span>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card card-body card-style bg-aqua">
+          <h5>Up Comming Product  </h5>
+          <span>667</span>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <div class="row">
       <div v-for="(menu, index) in menus" :key="index" class="col-md-3 col-sm-6 col-xs-12">
         <router-link :to="{name:menu.route_name, params:{slug:menu.params}}">
           <div class="info-box d-flex align-items-center">
@@ -176,3 +207,16 @@ export default {
   }
 };
 </script>
+
+<style >
+  .card-style {
+    text-align: center;
+}
+.card-style h5 {
+    font-weight: 700;
+}
+.card-style span {
+    font-weight: 700;
+    font-size: 28px;
+}
+</style>

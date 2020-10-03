@@ -46,9 +46,24 @@ const routes = [
             { path: '/menu/:id/edit', name: 'menu.edit', component: () => import('./../views/backend/Website/Menu/Create'), beforeEnter: authGuard },
 
 
+            // ------------------Product portion------------------
+            { path: '/product', name: 'product.index', meta: { title: 'Product', nav: true }, component: () => import('./../views/backend/Product/Index'), beforeEnter: authGuard },
+            { path: '/product/create', name: 'product.create', component: () => import('./../views/backend/Product/Create'), beforeEnter: authGuard },
+            { path: '/product/:id', name: 'product.show', component: () => import('./../views/backend/Product/View'), beforeEnter: authGuard },
+            { path: '/product/:id/edit', name: 'product.edit', component: () => import('./../views/backend/Product/Create'), beforeEnter: authGuard },
 
 
+// ------------------Order portion------------------
+            { path: '/order', name: 'order.index', meta: { title: 'Order', nav: true }, component: () => import('./../views/backend/Order/Index'), beforeEnter: authGuard },
+            { path: '/order/create', name: 'order.create', component: () => import('./../views/backend/Order/Create'), beforeEnter: authGuard },
+            { path: '/order/:id', name: 'order.show', component: () => import('./../views/backend/Order/View'), beforeEnter: authGuard },
+            { path: '/order/:id/edit', name: 'order.edit', component: () => import('./../views/backend/Order/Create'), beforeEnter: authGuard },
 
+            // ------------------Review portion------------------
+            { path: '/review', name: 'review.index', meta: { title: 'Review', nav: true }, component: () => import('./../views/backend/Review/Index'), beforeEnter: authGuard },
+            { path: '/review/create', name: 'review.create', component: () => import('./../views/backend/Review/Create'), beforeEnter: authGuard },
+            { path: '/review/:id', name: 'review.show', component: () => import('./../views/backend/Review/View'), beforeEnter: authGuard },
+            { path: '/review/:id/edit', name: 'review.edit', component: () => import('./../views/backend/Review/Create'), beforeEnter: authGuard },
 
 
 

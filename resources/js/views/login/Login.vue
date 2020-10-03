@@ -52,8 +52,8 @@ export default {
   data() {
     return {
       data: {
-        email: "oshitsd@gmail.com",
-        password: "oshitsd"
+        email: "admin@gmail.com",
+        password: "admin123"
       }
     };
   },

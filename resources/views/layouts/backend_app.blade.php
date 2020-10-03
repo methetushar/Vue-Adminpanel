@@ -17,7 +17,7 @@
             baseurl: '{{URL::to("/")}}'
         }
     </script>
-    <title>Oshit Sutra Dar</title>
+    <title>YouTheSailor</title>
     <!-- Font Awesome Ionicons -->
     <link rel="stylesheet" href="{{ asset('assets') }}/icons/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('assets') }}/icons/Ionicons/css/ionicons.min.css">
